@@ -1,69 +1,48 @@
+/* Responsive untuk tablet dan HP */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5;
-    margin: 0;
-    padding: 40px;
+    .kartu {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    #nama {
+        font-size: 24px;
+    }
+
+    .deskripsi {
+        font-size: 14px;
+        text-align: left;
+    }
 }
 
-/* Kartu Profil */
-.kartu {
-    width: 400px;
-    margin: 50px auto;
-    padding: 30px;
+/* Responsive untuk HP kecil */
+@media (max-width: 360px) {
+    body {
+        padding: 10px;
+    }
 
-    background-color: white;
-    border: 2px solid #2c3e50;
-    border-radius: 15px;
+    .kartu {
+        padding: 15px;
+        border-radius: 10px;
+    }
 
-    text-align: center;
-    box-sizing: border-box;
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-/* Efek hover kartu */
-.kartu:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Foto Profil */
-.foto {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-
-    border-radius: 50%;
-    border: 4px solid #2c3e50;
-
-    margin-bottom: 15px;
-}
-
-/* Nama */
-#nama {
-    font-family: Georgia, serif;
-    color: #2c3e50;
-
-    margin: 10px 0 20px;
-}
-
-/* Informasi */
-.info {
-    font-family: Arial, sans-serif;
-    color: #555;
-
-    margin: 8px 0;
-}
-
-/* Deskripsi */
-.deskripsi {
-    font-family: Arial, sans-serif;
-    color: #333;
-
-    line-height: 1.6;
-    text-align: justify;
-
-    margin-top: 20px;
+    #nama {
+        font-size: 20px;
+    }
 }
